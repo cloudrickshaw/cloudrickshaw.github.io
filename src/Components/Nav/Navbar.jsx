@@ -39,6 +39,9 @@ const Navbar = () => {
 	const redirectCalendly = () => {
 		window.open("https://calendly.com/cloudrickshaw");
 	};
+    const renderBootcamp = () => {
+	    window.open("/bootcamp");
+    }
 	const styles = useStyles();
 	return (
 		<>
@@ -53,6 +56,11 @@ const Navbar = () => {
 					<div className={styles.navItems}>
 						<Button className={styles.buttonStyle} onClick={redirectCalendly}>
 							Book an Appointment
+						</Button>
+					</div>
+                    <div className={styles.navItems}>
+						<Button className={styles.buttonStyle} onClick={renderBootcamp}>
+						 Bootcamp	
 						</Button>
 					</div>
 				</div>
